@@ -66,15 +66,13 @@
         ],
         "first-install": [
             "composer install",
-            "composer post-root-package-install",
-            "composer post-create-project-cmd"
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan key:generate --ansi"
         ],
         "full-update": [
-            "composer update",
             "@php artisan app:update"
         ],
         "full-install": [
-            "composer install",
             "@php artisan app:install"
         ]
     }
