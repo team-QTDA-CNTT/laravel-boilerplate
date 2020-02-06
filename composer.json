@@ -15,12 +15,13 @@
     ],
     "require": {
         "php": "^7.2",
+        "cao-minh-duc/l5-repository": "@dev",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
         "league/fractal": "^0.19.2",
         "mad-web/laravel-initializer": "^2.0",
-        "cao-minh-duc/l5-repository": "@dev"
+        "sven/artisan-view": "^3.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
