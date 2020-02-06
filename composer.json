@@ -63,6 +63,19 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "first-install": [
+            "composer install",
+            "composer post-root-package-install",
+            "composer post-create-project-cmd"
+        ],
+        "full-update": [
+            "composer update",
+            "@php artisan app:update"
+        ],
+        "full-install": [
+            "composer install",
+            "@php artisan app:install"
         ]
     }
 }

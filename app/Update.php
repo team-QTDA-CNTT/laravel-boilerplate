@@ -23,7 +23,7 @@ class Update
     public function local(Runner $run)
     {
         return $run
-            ->external('composer', 'install')
+            ->external('composer', 'update')
             ->external('npm', 'install')
             ->external('npm', 'run', 'development')
             ->artisan('migrate')

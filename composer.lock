@@ -8,11 +8,17 @@
     "packages": [
         {
             "name": "cao-minh-duc/l5-repository",
-            "version": "dev-master",
+            "version": "2.6.41",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cao-minh-duc/l5-repository.git",
+                "reference": "363904bd1d01325223197d3de1ea3f6fc9da2a06"
+            },
             "dist": {
-                "type": "path",
-                "url": "packages/cao-minh-duc/l5-repository",
-                "reference": "d632b58d61ac8db64f74a372cff8ebde383ee834"
+                "type": "zip",
+                "url": "https://api.github.com/repos/cao-minh-duc/l5-repository/zipball/363904bd1d01325223197d3de1ea3f6fc9da2a06",
+                "reference": "363904bd1d01325223197d3de1ea3f6fc9da2a06",
+                "shasum": ""
             },
             "require": {
                 "illuminate/config": "~5.0|~6.0",
@@ -23,9 +29,6 @@
                 "illuminate/pagination": "~5.0|~6.0",
                 "illuminate/support": "~5.0|~6.0",
                 "prettus/laravel-validation": "~1.1|~1.2"
-            },
-            "require-dev": {
-                "sven/artisan-view": "*"
             },
             "suggest": {
                 "league/fractal": "Required to use the Fractal Presenter (0.12.*).",
@@ -45,14 +48,15 @@
                     "Prettus\\Repository\\": "src/Prettus/Repository/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Anderson Andrade",
-                    "homepage": "http://andersonandra.de",
                     "email": "contato@andersonandra.de",
+                    "homepage": "http://andersonandra.de",
                     "role": "Developer"
                 }
             ],
@@ -65,13 +69,7 @@
                 "model",
                 "repository"
             ],
-            "support": {
-                "email": "contato@andersonandra.de",
-                "issues": "https://github.com/andersao/l5-repository/issues",
-                "wiki": "https://github.com/andersao/l5-repository",
-                "source": "https://github.com/andersao/l5-repository",
-                "docs": "http://andersao.github.io/l5-repository"
-            }
+            "time": "2020-02-05T06:48:26+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
