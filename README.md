@@ -13,21 +13,13 @@
 
 ## Installation
 
-Install all the dependencies using composer
+First Time Install
 
-    composer install
+    composer first-install
 
-Copy the example env file and make the required configuration changes in the .env file
+Install all things (**Set the database connection in .env before migrating**)
 
-    cp .env.example .env
-
-Generate a new application key
-
-    php artisan key:generate
-
-Run the database migrations (**Set the database connection in .env before migrating**)
-
-    php artisan migrate
+    composer full-install
 
 Start the local development server
 
@@ -37,13 +29,12 @@ You can now access the server at http://localhost:8000
 
 **TL;DR command list**
 
-    composer install
-    cp .env.example .env
-    php artisan key:generate
+    composer first-install
+    composer full-install
     
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
 
-    php artisan migrate
+    composer full-install
     php artisan serve
 
 ## License
