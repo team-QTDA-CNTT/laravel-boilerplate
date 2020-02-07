@@ -37,6 +37,11 @@ You can now access the server at http://localhost:8000
     composer full-install
     php artisan serve
 
+## Update
+
+Full Update
+    composer full-update
+    
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
