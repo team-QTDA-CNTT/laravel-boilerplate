@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38243d5f71.js"></script>
+  </head>
+  <body>
+
+  <div class="max-w-2xl mx-auto mt-10">
+    <div class="carousel1 relative overflow-hidden">
+      <div class="carousel-inner transition duration-1000 ease-in-out">
+        <div class="carousel-item  float-left">
+          <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
+        </div>
+        <div class="carousel-item float-left">
+          <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
+        </div>
+        <div class="carousel-item float-left">
+          <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
+        </div>
+      </div>
+      <div onclick="previousCarousel()" class="absolute h-full flex items-center w-1/6 justify-center text-white opacity-75 cursor-pointer left-0 text-5xl hover:opacity-100">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div onclick="nextCarousel()" class="absolute h-full flex items-center w-1/6 justify-center text-white opacity-75 cursor-pointer right-0 text-5xl hover:opacity-100">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    carouselWidth = document.getElementsByClassName('carousel1')[0].offsetWidth;
+    carouselItem = document.getElementsByClassName('carousel-item');
+    carouselInner = document.getElementsByClassName('carousel-inner')
+
+    carouselInner[0].style.width = carouselItem.length * carouselWidth + "px";
+
+    for(i=0; i<carouselItem.length; i++){
+      carouselItem[i].style.width = carouselWidth + "px";
+    }
+
+    translateX = 0;
+
+    function nextCarousel() {
+      translateX -= carouselWidth;
+      if(translateX == - carouselItem.length * carouselWidth){
+        translateX = 0;
+      }
+      carouselInner[0].style.transform = 'translateX(' + translateX +'px';
+    }
+
+    function previousCarousel() {
+      if(translateX == 0){
+        translateX = - carouselItem.length * carouselWidth + slideWidth;
+      } else {
+        translateX += slideWidth;
+      }
+      carouselInner[0].style.transform = 'translateX(' + translateX +'px';
+    }
+
+  </script>
+
+  </body>
+</html>

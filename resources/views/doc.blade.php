@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="flex">
-      <aside class="hidden md:block  w-64 overflow-y h-screen pt-12 border-r sticky top-0">
+      <aside class="hidden lg:block  w-64 overflow-y h-screen pt-12 border-r sticky top-0">
         <nav class="pt-8 text-gray-600">
           <a class="text-teal-600 font-bold py-2 px-3 block mb-1 text-sm" href="#">CONTENT</a>
           <ul class="menu-aside">
@@ -1634,27 +1634,138 @@
 
             <div class="lg:flex">
               <div class="w-full lg:w-1/2">
-                <h3 mb-4><span class="font-bold">SINGLE SLIDER</span> <span class="text-sm">OWL PLUGIN</span></h3>
+                <div class="m-3">
+                  <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="text-sm">OWL PLUGIN</span></h3>
 
-
-
-
-
-
-
-
-
-
-
-
-
+                  <div class="carousel1 relative overflow-hidden">
+                    <div class="carousel-inner float-left transition duration-1000 ease-in-out">
+                      <div class="carousel-item  float-left">
+                        <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
+                      </div>
+                      <div class="carousel-item float-left">
+                        <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
+                      </div>
+                      <div class="carousel-item float-left">
+                        <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div onclick="previousCarousel()" class="absolute h-full flex items-center w-1/6 justify-center text-white opacity-75 cursor-pointer left-0 text-5xl hover:opacity-100">
+                      <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div onclick="nextCarousel()" class="absolute h-full flex items-center w-1/6 justify-center text-white opacity-75 cursor-pointer right-0 text-5xl hover:opacity-100">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                  </div>
+                </div>
 
 
               </div>
               <div class="w-full lg:w-1/2">
-                <h3 mb-4><span class="font-bold">SINGLE SLIDER</span> <span class="font-sm">BOOTSTRAP</span></h3>
 
+                <div class=" m-2">
+                  <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="font-sm">BOOTSTRAP</span></h3>
+
+                  <div class="carousel2 relative overflow-hidden">
+                    <img class="slide w-full hidden" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
+                    <img class="slide w-full hidden" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
+                    <img class="slide w-full hidden" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
+                    <div onclick="changeSlide(-1)" class="z-50 absolute top-0 h-full flex items-center w-1/6 justify-center text-white opacity-75 cursor-pointer left-0 text-5xl hover:opacity-100">
+                      <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div onclick="changeSlide(1)" class="z-50 absolute top-0 h-full flex items-center w-1/6 justify-center text-white opacity-75 cursor-pointer right-0 text-5xl hover:opacity-100">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="absolute w-full bottom-0 mb-4 text-center">
+                      <span class="dot w-3 h-3 inline-block rounded-full border border-white mx-2"></span>
+                      <span class="dot w-3 h-3 inline-block rounded-full border border-white mx-2"></span>
+                      <span class="dot w-3 h-3 inline-block rounded-full border border-white mx-2"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <div class="m-2 m-y">
+              <h3 mb-4=""><span class="font-bold">CAROUSEL ITEMS</span> <span class="text-sm">OWL PLUGIN</span></h3>
+
+              <div class="">
+                <div class="md:flex md:flex-wrap">
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-1/4">
+                    <div class="m-2 p-2 border rounded-lg text-center">
+                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
+                      <div class="my-4">
+                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -1662,31 +1773,91 @@
       </main>
     </div>
 
-
-
-
-    @push('js')
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/prism.min.js"></script>
-      <script>
-          function toggleTarget(event) {
-            event.preventDefault();
-            var target = event.target.getAttribute('data-target');
-            var targetSelector = "[data-selector="+target+"]";
-            //get element
-            var $element = document.querySelectorAll(targetSelector)[0];
-            // toggle
-            if ($element != null) {
-              if ($element.style.display == "none") {
-                $element.style.display = 'block';
-              }
-              else {
-                $element.style.display = 'none';
-              }
-              return false;
-          }
-        }
-      </script>
-    @endpush
-
-
 @stop
+
+
+@push('js')
+  <script>
+      function toggleTarget(event) {
+        event.preventDefault();
+        var target = event.target.getAttribute('data-target');
+        var targetSelector = "[data-selector="+target+"]";
+        //get element
+        var $element = document.querySelectorAll(targetSelector)[0];
+        // toggle
+        if ($element != null) {
+          if ($element.style.display == "none") {
+            $element.style.display = 'block';
+          }
+          else {
+            $element.style.display = 'none';
+          }
+          return false;
+      }
+    }
+
+    slide = document.getElementsByClassName('slide');
+    dot = document.getElementsByClassName('dot');
+
+    indexSlide = 0;
+
+    function styleSlide(n){
+      slide[n].style.display = 'block';
+      dot[n].style.background = 'white';
+    }
+
+    styleSlide(indexSlide);
+
+    function changeSlide(n){
+      indexSlide += n;
+      if(indexSlide == slide.length){
+        indexSlide = 0;
+      };
+
+      if(indexSlide < 0){
+        indexSlide = slide.length -1;
+      };
+      showSlide(indexSlide);
+    }
+
+    function showSlide(n){
+      for(i=0; i<slide.length;i++){
+        slide[i].style.display = 'none';
+        dot[i].style.background = 'none';
+      }
+      styleSlide(n);
+    };
+
+
+    carouselWidth = document.getElementsByClassName('carousel1')[0].offsetWidth;
+    carouselItem = document.getElementsByClassName('carousel-item');
+    carouselInner = document.getElementsByClassName('carousel-inner')
+
+    carouselInner[0].style.width = carouselItem.length * carouselWidth + "px";
+
+    for(i=0; i<carouselItem.length; i++){
+      carouselItem[i].style.width = carouselWidth + "px";
+    }
+
+    translateX = 0;
+
+    function nextCarousel() {
+      translateX -= carouselWidth;
+      if(translateX == - carouselItem.length * carouselWidth){
+        translateX = 0;
+      }
+      carouselInner[0].style.transform = 'translateX(' + translateX +'px';
+    }
+
+    function previousCarousel() {
+      if(translateX == 0){
+        translateX = - carouselItem.length * carouselWidth + slideWidth;
+      } else {
+        translateX += slideWidth;
+      }
+      carouselInner[0].style.transform = 'translateX(' + translateX +'px';
+    }
+
+
+  </script>
+@endpush

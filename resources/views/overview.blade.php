@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.app')
 @section('content')
     <!--  Home -->
     <section class="py-16 border-b">
