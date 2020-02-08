@@ -1,15 +1,18 @@
 {
-    "name": "laravel/laravel",
+    "name": "cao-minh-duc/laravel-boilerplate",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The Laravel Boilerplate Project.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "laravel-boilerplate",
+        "boilerplate"
     ],
     "license": "MIT",
     "require": {
         "php": "^7.2",
         "cao-minh-duc/l5-repository": "*",
+        "cao-minh-duc/livewire-datatable": "dev-master",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
