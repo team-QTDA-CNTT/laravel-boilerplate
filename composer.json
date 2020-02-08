@@ -1,10 +1,12 @@
 {
-    "name": "laravel/laravel",
+    "name": "cao-minh-duc/laravel-boilerplate",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The Laravel Boilerplate Project.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "laravel-boilerplate",
+        "boilerplate"
     ],
     "license": "MIT",
     "require": {
