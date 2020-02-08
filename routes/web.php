@@ -42,35 +42,35 @@ $pages = [
 ];
 
 Route::get('/', function () use ($pages) {
-    return view('overview',[
+    return view('overview', [
       'currentPageCode' => 'overview',
       'pages' => $pages
     ]);
 })->name('home');
 
 Route::get('/developer-kit', function () use ($pages) {
-    return view('developer-kit',[
+    return view('developer-kit', [
       'currentPageCode' => 'developer_kit',
       'pages' => $pages
     ]);
 })->name('developer_kit');
 
 Route::get('/design-kit', function () use ($pages) {
-    return view('design-kit',[
+    return view('design-kit', [
       'currentPageCode' => 'design_kit',
       'pages' => $pages
     ]);
 })->name('design_kit');
 
 Route::get('/templates', function () use ($pages) {
-    return view('templates',[
+    return view('templates', [
       'currentPageCode' => 'templates',
       'pages' => $pages
     ]);
 })->name('templates');
 
 Route::get('/doc', function () use ($pages) {
-    return view('doc',[
+    return view('doc', [
       'currentPageCode' => 'doc',
       'pages' => $pages
     ]);
