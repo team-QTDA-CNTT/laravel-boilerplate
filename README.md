@@ -40,7 +40,9 @@ You can now access the server at http://localhost:8000
 ## Update
 
 Full Update
+
     composer full-update
+    
     
 ## License
 
