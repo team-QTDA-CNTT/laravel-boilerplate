@@ -1,30 +1,44 @@
 @extends('layouts.app')
 @section('content')
-    <div class="flex">
-      <aside class="hidden lg:block  w-64 overflow-y h-screen pt-12 border-r sticky top-0">
-        <nav class="pt-8 text-gray-600">
-          <a class="text-teal-600 font-bold py-2 px-3 block mb-1 text-sm" href="#">CONTENT</a>
+    <div class="lg:flex">
+      <aside class="w-full lg:w-64 lg:sticky lg:top-0 h-64 lg:h-screen overflow-y-auto border lg:border-r ">
+        <nav class="lg:pt-20 text-gray-600 overflow-y-auto">
+          <a class="text-teal-600 font-bold py-2 px-3 block mb-1 text-sm" href="#colors">CONTENT</a>
           <ul class="menu-aside">
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#colors">Colors</a> </li>
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#typography">Typography</a> </li>
-      			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#icons">Icons</a> </li>
-      			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#helper_classes">Helper classes</a> </li>
       		</ul>
-          <a class="text-teal-600 font-bold py-2 px-3 block mb-1 text-sm" href="#">COMPONENTS</a>
+          <a class="text-teal-600 font-bold py-2 px-3 block mb-1 text-sm" href="#alerts">COMPONENTS</a>
           <ul class="menu-aside">
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#alerts">Alerts</a> </li>
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#buttons">Buttons</a> </li>
-      			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#form_elements">Form elements</a> </li>
+      			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#forms">Form elements</a> </li>
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#badges">Badges and ratings</a> </li>
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#cards">Cards and boxes</a> </li>
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#images">Images</a> </li>
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#navbar">Navbar</a> </li>
       			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#icontext">Icon with text</a> </li>
       		</ul>
+          <a class="text-teal-600 font-bold py-2 px-3 block mb-1 text-sm" href="#product_basic">BLOCKS</a>
+          <ul class="menu-aside">
+      			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#product_basic">Product grid</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#product_list">Product list</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#product_detail">Product detail</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#filters">Filters</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#forms">Forms</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#shopping_cart">Shopping cart</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#features">Features</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#headers">Site headers</a> </li>
+            <li> <a class="py-2 px-3 block hover:bg-gray-200" href="#footers">Site footers</a> </li>
+          </ul>
+          <a class="text-teal-600 font-bold py-2 px-3 block mb-1 text-sm" href="#carousels">MORE</a>
+          <ul class="menu-aside">
+      			<li> <a class="py-2 px-3 block hover:bg-gray-200" href="#carousels">Carousels</a> </li>
+          </ul>
         </nav>
       </aside>
-      <main class="w-full pt-12 text-gray-700">
-        <section class="px-10 py-16 border-b" id="colors">
+      <main class="w-full pt-4 lg:pt-12 text-gray-700">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="colors">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Colors</h1>
             <h3 class="text-sm font-bold mb-4">MAIN COLORS</h3>
@@ -81,7 +95,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="typography">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="typography">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Typography</h1>
             <p class="text-xs ...">.text-xs - The quick brown fox ...</p>
@@ -97,7 +111,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="typography">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="typography">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Alerts</h1>
             <div class="px-4 py-3 rounded border mb-3 bg-red-200 text-red-600 border-red-300">
@@ -127,43 +141,43 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="buttons">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="buttons">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Buttons</h1>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">Primary</button>
-            <button type="button" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">Secondary</button>
-            <button type="button" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">Success</button>
-            <button type="button" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 rounded">Danger</button>
-            <button type="button" class="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded">Warning</button>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">Info</button>
-            <button type="button" class="hover:border-gray-500 font-bold py-2 px-4 rounded border">Light</button>
-            <button type="button" class="bg-gray-800 hover:bg-black text-white font-bold py-2 px-4 rounded">Dark</button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-2">Primary</button>
+            <button type="button" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-2">Secondary</button>
+            <button type="button" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded mb-2">Success</button>
+            <button type="button" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 rounded mb-2">Danger</button>
+            <button type="button" class="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded mb-2">Warning</button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-2">Info</button>
+            <button type="button" class="hover:border-gray-500 font-bold py-2 px-4 rounded border mb-2">Light</button>
+            <button type="button" class="bg-gray-800 hover:bg-black text-white font-bold py-2 px-4 rounded mb-2">Dark</button>
             <br><br><br>
-            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 px-4 rounded">Primary</button>
-            <button type="button" class="text-gray-700 hover:bg-gray-700 border border-gray-700 hover:text-white font-bold py-2 px-4 rounded">Secondary</button>
-            <button type="button" class="text-green-700 hover:bg-green-700 border border-green-700 hover:text-white font-bold py-2 px-4 rounded">Success</button>
-            <button type="button" class="text-red-700 hover:bg-red-700 border border-red-700 hover:text-white font-bold py-2 px-4 rounded">Danger</button>
-            <button type="button" class="text-orange-700 hover:bg-orange-700 border border-orange-700 hover:text-white font-bold py-2 px-4 rounded">Warning</button>
-            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 px-4 rounded">Info</button>
-            <button type="button" class="hover:bg-gray-500 hover:text-gray-700 text-gray-400 font-bold py-2 px-4 rounded border">Light</button>
-            <button type="button" class="text-gray-700 hover:bg-gray-700 border border-gray-700 hover:text-white font-bold py-2 px-4 rounded">Dark</button>
+            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 px-4 rounded mb-2">Primary</button>
+            <button type="button" class="text-gray-700 hover:bg-gray-700 border border-gray-700 hover:text-white font-bold py-2 px-4 rounded mb-2">Secondary</button>
+            <button type="button" class="text-green-700 hover:bg-green-700 border border-green-700 hover:text-white font-bold py-2 px-4 rounded mb-2">Success</button>
+            <button type="button" class="text-red-700 hover:bg-red-700 border border-red-700 hover:text-white font-bold py-2 px-4 rounded mb-2">Danger</button>
+            <button type="button" class="text-orange-700 hover:bg-orange-700 border border-orange-700 hover:text-white font-bold py-2 px-4 rounded mb-2">Warning</button>
+            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 px-4 rounded mb-2">Info</button>
+            <button type="button" class="hover:bg-gray-500 hover:text-gray-700 text-gray-400 font-bold py-2 px-4 rounded border mb-2">Light</button>
+            <button type="button" class="text-gray-700 hover:bg-gray-700 border border-gray-700 hover:text-white font-bold py-2 px-4 rounded mb-2">Dark</button>
             <br><br><br>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded-full">Rounded pill</button>
-            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 px-4 rounded-full">Rounded pill</button>
-            <button type="button" class="w-10 bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 rounded-full"><i class="fa fa-user"></i></button>
-            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 w-10 rounded-full"><i class="fa fa-user"></i></button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded-full mb-2">Rounded pill</button>
+            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 px-4 rounded-full mb-2">Rounded pill</button>
+            <button type="button" class="w-10 bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 rounded-full mb-2"><i class="fa fa-user"></i></button>
+            <button type="button" class="text-teal-700 hover:bg-teal-700 border border-teal-700 hover:text-white font-bold py-2 w-10 rounded-full mb-2"><i class="fa fa-user"></i></button>
             <br><br><br>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">Button <i class="fa fa-shopping-cart"></i></button>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"><i class="fa fa-shopping-cart"></i> With icon</button>
-            <button type="button" class="w-10 bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 rounded"><i class="fa fa-user"></i></button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-2">Button <i class="fa fa-shopping-cart"></i></button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-2"><i class="fa fa-shopping-cart"></i> With icon</button>
+            <button type="button" class="w-10 bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 rounded mb-2"><i class="fa fa-user"></i></button>
             <br><br><br>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-1 px-2 text-sm rounded">Small</button>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">Normal</button>
-            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-3 px-6 text-2xl rounded">Large</button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-1 px-2 text-sm rounded mb-2">Small</button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-2">Normal</button>
+            <button type="button" class="bg-teal-700 hover:bg-teal-800 text-white font-bold py-3 px-6 text-2xl rounded mb-2">Large</button>
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="forms">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="forms">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Forms</h1>
             <div class="container md:flex">
@@ -228,7 +242,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="badges">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="badges">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Badges and misc</h1>
             <div class="container md:flex md:flex-wrap">
@@ -298,7 +312,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="cards">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="cards">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Card and boxes</h1>
             <div class="container md:flex">
@@ -322,7 +336,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="images">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="images">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Images</h1>
             <div class="container md:flex">
@@ -344,7 +358,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="navbars">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="navbars">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Navbars</h1>
             <h3 class="text-sm font-bold mb-4">BASIC NAVBAR</h3>
@@ -423,7 +437,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="icontext">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="icontext">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Icon with text</h1>
 
@@ -478,21 +492,21 @@
             <br><br>
             <h3 class="text-sm font-bold mb-4">WITH NOTIFICATION</h3>
             <div class="rounded border p-6">
-              <span class="mr-3">
+              <span class="mr-3 mb-2 block lg:inline-block">
                 <span class="h-12 w-12 inline-block bg-teal-500 text-white p-3 text-center mr-1 rounded-full relative">
                   <i class="fa fa-user"></i>
                   <span class="px-2 leading-normal bg-red-500 absolute top-0 right-0 rounded-full text-white -m-1 text-sm leading-nose">2</span>
                 </span> Some more short text
               </span>
 
-              <span class="mr-3">
+              <span class="mr-3 mb-2 block lg:inline-block">
                 <span class="h-12 w-12 inline-block text-teal-500 border border-teal-500 p-3 text-center mr-1 rounded-full relative">
                   <i class="fa fa-envelope text-primary"></i>
                   <span class="px-2 leading-normal bg-red-500 absolute top-0 right-0 rounded-full text-white -m-1 text-sm leading-nose">3</span>
                 </span> New messages
               </span>
 
-              <span class="mr-3">
+              <span class="mr-3 mb-2 block lg:inline-block">
                 <span class="h-12 w-12 inline-block bg-gray-300 text-teal-500 p-3 text-center mr-1 rounded-full relative">
                   <i class="fa fa-shopping-cart text-primary"></i>
                   <span class="px-2 leading-normal bg-red-500 absolute top-0 right-0 rounded-full text-white -m-1 text-sm leading-nose">1</span>
@@ -533,7 +547,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="product_basic">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="product_basic">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Product grid</h1>
 
@@ -660,7 +674,7 @@
         </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="product_list">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="product_list">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Product list</h1>
 
@@ -724,7 +738,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="product_detail">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="product_detail">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Product detail</h1>
             <br><br>
@@ -732,7 +746,7 @@
                 <div class="w-full lg:w-1/2">
                   <div class="p-8">
                     <div class="">
-                      <img class="mx-auto lg:max-w-full max-w-md" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/12.jpg" alt="">
+                      <img class="mx-auto lg:max-w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/12.jpg" alt="">
                     </div>
                     <div class="py-8 text-center">
                       <a href="#"><img class="w-12 h-12 border rounded inline-block" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/12.jpg"></a>
@@ -788,10 +802,10 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="filters">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="filters">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Filters</h1>
-            <div class="py-4 px-6 border rounded flex justify-between">
+            <div class="p-2 md:p-4 border rounded flex justify-between">
               <div class="">
                 Category
         				<select class="ml-2 p-2 border rounded">
@@ -965,7 +979,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="forms">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="forms">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Forms</h1>
             <div class="lg:flex lg:flex-wrap">
@@ -1134,7 +1148,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="shopping_cart">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="shopping_cart">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Shopping cart</h1>
             <div class="lg:flex lg:flex-wrap">
@@ -1151,7 +1165,7 @@
                       <tr>
                         <td class="p-2">
                           <img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="" class="hidden lg:block w-16 w-16 float-left">
-                          <div class="pl-20">
+                          <div class="pl-0 md:pl-20">
                             <a href="#" class="block mb-2">Camera Canon EOS M50 Kit</a>
                             <p class="text-sm text-gray-500">Matrix: 25 Mpx <br> Brand: Canon</p>
                           </div>
@@ -1178,7 +1192,7 @@
                       <tr>
                         <td class="p-2">
                           <img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg" alt="" class="hidden lg:block w-16 w-16 float-left">
-                          <div class="pl-20">
+                          <div class="pl-0 md:pl-20">
                             <a href="#" class="block mb-2">ADATA Premier ONE microSDXC</a>
                             <p class="text-sm text-gray-500">Size: 256 GB <br> Brand: ADATA</p>
                           </div>
@@ -1205,7 +1219,7 @@
                       <tr>
                         <td class="p-2">
                           <img src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/3.jpg" alt="" class="hidden lg:block w-16 w-16 float-left">
-                          <div class="pl-20">
+                          <div class="pl-0 md:pl-20">
                             <a href="#" class="block mb-2">Gamepad Sony DualShock 4</a>
                             <p class="text-sm text-gray-500">Version: CUH-ZCT2E <br> Brand: Sony</p>
                           </div>
@@ -1360,7 +1374,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="features">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="features">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Features</h1>
             <div class="lg:flex lg:flex-wrap">
@@ -1471,7 +1485,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="headers">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="headers">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Site headers</h1>
 
@@ -1562,7 +1576,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="footers">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="footers">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Site footers</h1>
             <div class="p-1 border">
@@ -1628,7 +1642,7 @@
           </div>
         </section>
 
-        <section class="px-10 py-16 border-b" id="carousels">
+        <section class="p-1 lg:px-10 lg:py-16 border-b" id="carousels">
           <div class="container mx-auto">
             <h1 class="text-3xl font-bold mb-10">Carousels</h1>
 
@@ -1657,14 +1671,10 @@
                     </div>
                   </div>
                 </div>
-
-
               </div>
               <div class="w-full lg:w-1/2">
-
                 <div class=" m-2">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="font-sm">BOOTSTRAP</span></h3>
-
                   <div class="carousel2 relative overflow-hidden">
                     <img class="slide w-full hidden" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
                     <img class="slide w-full hidden" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
@@ -1684,14 +1694,12 @@
                 </div>
               </div>
             </div>
-
             <div class="m-2 m-y">
               <h3 mb-4=""><span class="font-bold">CAROUSEL ITEMS</span> <span class="text-sm">OWL PLUGIN</span></h3>
 
-              <div class="">
-                <div class="md:flex md:flex-wrap">
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+              <div class="product-carousel relative">
+                <div class="product-carousel-inner">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1699,8 +1707,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1708,8 +1715,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1717,8 +1723,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1726,8 +1731,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1735,8 +1739,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1744,8 +1747,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1753,8 +1755,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="w-full md:w-1/2 lg:w-1/4">
+                  <div class="product-carousel-item float-left w-full md:w-1/2 lg:w-1/4">
                     <div class="m-2 p-2 border rounded-lg text-center">
                       <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
                       <div class="my-4">
@@ -1762,17 +1763,17 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
-
             </div>
+
 
           </div>
         </section>
+
+
       </main>
     </div>
-
 @stop
 
 
@@ -1857,6 +1858,8 @@
       }
       carouselInner[0].style.transform = 'translateX(' + translateX +'px';
     }
+
+
 
 
   </script>
