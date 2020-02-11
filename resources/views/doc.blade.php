@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="lg:flex">
-      <aside class="w-full h-64 overflow-y-auto border lg:w-64 lg:sticky lg:top-0 lg:h-screen lg:border-r ">
+      <aside class="w-full h-56 overflow-y-auto border lg:w-64 lg:sticky lg:top-0 lg:h-screen lg:border-r ">
         <nav class="overflow-y-auto text-gray-600 lg:pt-20">
           <a class="block px-3 py-2 mb-1 text-sm font-bold text-teal-600" href="#colors">CONTENT</a>
           <ul class="menu-aside">

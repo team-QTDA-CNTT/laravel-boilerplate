@@ -8,8 +8,6 @@
 
     <script src="https://kit.fontawesome.com/38243d5f71.js" defer></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-
   </head>
   <body class="bg-white">
     <!--  Header -->
