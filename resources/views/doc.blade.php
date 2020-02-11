@@ -1039,7 +1039,7 @@
                   <div class="flex mb-4">
                     <div class="w-1/2 px-1">
                       <label>Country</label>
-                      <select class="w-full px-3 py-2 mt-1 border rounded">
+                      <select class="form-select  w-full px-3 py-2 mt-1 border rounded">
               			    <option> Choose...</option>
               			      <option>Uzbekistan</option>
               			      <option>Russia</option>
@@ -1651,7 +1651,7 @@
                 <div class="m-3">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="text-sm">OWL PLUGIN</span></h3>
 
-                  <div class="relative overflow-hidden">
+                  <div class="relative overflow-hidden  z-10">
                     <div class="float-left transition duration-1000 ease-in-out">
                       <div class="float-left" style="display: none;">
                         <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
@@ -1675,7 +1675,7 @@
               <div class="w-full lg:w-1/2">
                 <div class="m-2 ">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="font-sm">BOOTSTRAP</span></h3>
-                  <div class="relative overflow-hidden">
+                  <div class="relative overflow-hidden  z-10">
                     <img class="hidden w-full" style="display: block;" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
                     <img class="hidden w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
                     <img class="hidden w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
