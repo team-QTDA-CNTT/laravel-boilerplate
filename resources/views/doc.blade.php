@@ -98,16 +98,16 @@
         <section class="p-1 border-b lg:px-10 lg:py-16" id="typography">
           <div class="container mx-auto">
             <h1 class="mb-10 text-3xl font-bold">Typography</h1>
-            <p class="text-xs ...">.text-xs - The quick brown fox ...</p>
-            <p class="text-sm ...">.text- The quick brown fox ...</p>
-            <p class="text-base ...">.text-base The quick brown fox ...</p>
-            <p class="text-lg ...">.text-lg The quick brown fox ...</p>
-            <p class="text-xl ...">.text-xl The quick brown fox ...</p>
-            <p class="text-2xl ...">.text-2xl The quick brown fox ...</p>
-            <p class="text-3xl ...">.text-3xl The quick brown fox ...</p>
-            <p class="text-4xl ...">.text-4xl The quick brown fox ...</p>
-            <p class="text-5xl ...">.text-5xl The quick brown fox ...</p>
-            <p class="text-6xl ...">.text-6xl The quick brown fox ...</p>
+            <p class="text-xs">.text-xs - The quick brown fox ...</p>
+            <p class="text-sm">.text- The quick brown fox ...</p>
+            <p class="text-base">.text-base The quick brown fox ...</p>
+            <p class="text-lg">.text-lg The quick brown fox ...</p>
+            <p class="text-xl">.text-xl The quick brown fox ...</p>
+            <p class="text-2xl">.text-2xl The quick brown fox ...</p>
+            <p class="text-3xl">.text-3xl The quick brown fox ...</p>
+            <p class="text-4xl">.text-4xl The quick brown fox ...</p>
+            <p class="text-5xl">.text-5xl The quick brown fox ...</p>
+            <p class="text-6xl">.text-6xl The quick brown fox ...</p>
           </div>
         </section>
 
@@ -197,7 +197,7 @@
               <div class="w-full md:w1/2">
                 <form class="p-4 mb-6">
                   <h3 class="mb-4 text-sm font-bold">INPUT VARIATIONS</h3>
-                  <select class="block w-full px-3 py-2 mb-3 border rounded">
+                  <select class="form-select block w-full px-3 py-2 mb-3 border rounded">
         						<option>Basic selection</option>
         						<option>Uzbekistan</option>
         						<option>Kazakhstan</option>
@@ -205,7 +205,7 @@
         						<option>Russia</option>
         						<option>Others</option>
         					</select>
-                  <select class="block w-full px-3 py-2 mb-3 border rounded">
+                  <select class="form-select block w-full px-3 py-2 mb-3 border rounded">
         					    <option>Custom selection</option>
         					    <option>United states</option>
         					    <option>Germany</option>
@@ -1653,13 +1653,13 @@
 
                   <div class="relative overflow-hidden carousel1">
                     <div class="float-left transition duration-1000 ease-in-out carousel-inner">
-                      <div class="float-left carousel-item">
+                      <div class="float-left carousel-item" style="display: none;">
                         <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
                       </div>
                       <div class="float-left carousel-item">
                         <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
                       </div>
-                      <div class="float-left carousel-item">
+                      <div class="float-left carousel-item" style="display: none;">
                         <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
                       </div>
                     </div>
@@ -1676,7 +1676,7 @@
                 <div class="m-2 ">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="font-sm">BOOTSTRAP</span></h3>
                   <div class="relative overflow-hidden carousel2">
-                    <img class="hidden w-full slide" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
+                    <img class="hidden w-full slide" style="display: block;" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
                     <img class="hidden w-full slide" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
                     <img class="hidden w-full slide" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
                     <div onclick="changeSlide(-1)" class="absolute top-0 left-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
@@ -1695,7 +1695,7 @@
               </div>
             </div>
             <div class="m-2 m-y">
-              <h3 mb-4=""><span class="font-bold">CAROUSEL ITEMS</span> <span class="text-sm">OWL PLUGIN</span></h3>
+              <h3 class="mb-4"><span class="font-bold">CAROUSEL ITEMS</span> <span class="text-sm">OWL PLUGIN</span></h3>
 
               <div class="relative product-carousel">
                 <div class="product-carousel-inner">
@@ -1796,71 +1796,5 @@
           return false;
       }
     }
-
-    slide = document.getElementsByClassName('slide');
-    dot = document.getElementsByClassName('dot');
-
-    indexSlide = 0;
-
-    function styleSlide(n){
-      slide[n].style.display = 'block';
-      dot[n].style.background = 'white';
-    }
-
-    styleSlide(indexSlide);
-
-    function changeSlide(n){
-      indexSlide += n;
-      if(indexSlide == slide.length){
-        indexSlide = 0;
-      };
-
-      if(indexSlide < 0){
-        indexSlide = slide.length -1;
-      };
-      showSlide(indexSlide);
-    }
-
-    function showSlide(n){
-      for(i=0; i<slide.length;i++){
-        slide[i].style.display = 'none';
-        dot[i].style.background = 'none';
-      }
-      styleSlide(n);
-    };
-
-
-    carouselWidth = document.getElementsByClassName('carousel1')[0].offsetWidth;
-    carouselItem = document.getElementsByClassName('carousel-item');
-    carouselInner = document.getElementsByClassName('carousel-inner')
-
-    carouselInner[0].style.width = carouselItem.length * carouselWidth + "px";
-
-    for(i=0; i<carouselItem.length; i++){
-      carouselItem[i].style.width = carouselWidth + "px";
-    }
-
-    translateX = 0;
-
-    function nextCarousel() {
-      translateX -= carouselWidth;
-      if(translateX == - carouselItem.length * carouselWidth){
-        translateX = 0;
-      }
-      carouselInner[0].style.transform = 'translateX(' + translateX +'px';
-    }
-
-    function previousCarousel() {
-      if(translateX == 0){
-        translateX = - carouselItem.length * carouselWidth + slideWidth;
-      } else {
-        translateX += slideWidth;
-      }
-      carouselInner[0].style.transform = 'translateX(' + translateX +'px';
-    }
-
-
-
-
   </script>
 @endpush
