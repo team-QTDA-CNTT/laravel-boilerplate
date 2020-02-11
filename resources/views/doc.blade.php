@@ -197,7 +197,7 @@
               <div class="w-full md:w1/2">
                 <form class="p-4 mb-6">
                   <h3 class="mb-4 text-sm font-bold">INPUT VARIATIONS</h3>
-                  <select class="form-select block w-full px-3 py-2 mb-3 border rounded">
+                  <select class="block w-full px-3 py-2 mb-3 border rounded form-select">
         						<option>Basic selection</option>
         						<option>Uzbekistan</option>
         						<option>Kazakhstan</option>
@@ -205,7 +205,7 @@
         						<option>Russia</option>
         						<option>Others</option>
         					</select>
-                  <select class="form-select block w-full px-3 py-2 mb-3 border rounded">
+                  <select class="block w-full px-3 py-2 mb-3 border rounded form-select">
         					    <option>Custom selection</option>
         					    <option>United states</option>
         					    <option>Germany</option>
@@ -1039,7 +1039,7 @@
                   <div class="flex mb-4">
                     <div class="w-1/2 px-1">
                       <label>Country</label>
-                      <select class="form-select  w-full px-3 py-2 mt-1 border rounded">
+                      <select class="w-full px-3 py-2 mt-1 border rounded form-select">
               			    <option> Choose...</option>
               			      <option>Uzbekistan</option>
               			      <option>Russia</option>
@@ -1651,7 +1651,7 @@
                 <div class="m-3">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="text-sm">OWL PLUGIN</span></h3>
 
-                  <div class="relative overflow-hidden  z-10">
+                  <div class="relative z-10 overflow-hidden">
                     <div class="float-left transition duration-1000 ease-in-out">
                       <div class="float-left" style="display: none;">
                         <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
@@ -1659,38 +1659,13 @@
                       <div class="float-left carousel-item">
                         <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
                       </div>
-                      <div class="float-left carousel-item" style="display: none;">
-                        <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
-                      </div>
-                    </div>
-                    <div onclick="" class="absolute left-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div onclick="" class="absolute right-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-right"></i>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div class="w-full lg:w-1/2">
                 <div class="m-2 ">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="font-sm">BOOTSTRAP</span></h3>
-                  <div class="relative overflow-hidden  z-10">
-                    <img class="hidden w-full" style="display: block;" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
-                    <img class="hidden w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
-                    <img class="hidden w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
-                    <div onclick="" class="absolute top-0 left-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div onclick="" class="absolute top-0 right-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-right"></i>
-                    </div>
-                    <div class="absolute bottom-0 w-full mb-4 text-center">
-                      <span class="inline-block w-3 h-3 mx-2 border border-white rounded-full"></span>
-                      <span class="inline-block w-3 h-3 mx-2 border border-white rounded-full"></span>
-                      <span class="inline-block w-3 h-3 mx-2 border border-white rounded-full"></span>
-                    </div>
-                  </div>
+
+                    @include('vendor.store-front.components.slider-single')
+                  
                 </div>
               </div>
             </div>
