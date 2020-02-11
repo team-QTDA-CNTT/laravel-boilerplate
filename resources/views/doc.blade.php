@@ -1663,10 +1663,10 @@
                         <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
                       </div>
                     </div>
-                    <div onclick="previousCarousel()" class="absolute left-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
+                    <div onclick="" class="absolute left-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
                       <i class="fas fa-chevron-left"></i>
                     </div>
-                    <div onclick="nextCarousel()" class="absolute right-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
+                    <div onclick="" class="absolute right-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
                       <i class="fas fa-chevron-right"></i>
                     </div>
                   </div>
@@ -1679,10 +1679,10 @@
                     <img class="hidden w-full slide" style="display: block;" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
                     <img class="hidden w-full slide" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
                     <img class="hidden w-full slide" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
-                    <div onclick="changeSlide(-1)" class="absolute top-0 left-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
+                    <div onclick="" class="absolute top-0 left-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
                       <i class="fas fa-chevron-left"></i>
                     </div>
-                    <div onclick="changeSlide(1)" class="absolute top-0 right-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
+                    <div onclick="" class="absolute top-0 right-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
                       <i class="fas fa-chevron-right"></i>
                     </div>
                     <div class="absolute bottom-0 w-full mb-4 text-center">
