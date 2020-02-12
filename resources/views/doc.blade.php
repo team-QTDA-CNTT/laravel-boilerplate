@@ -1650,24 +1650,22 @@
               <div class="w-full lg:w-1/2">
                 <div class="m-3">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="text-sm">OWL PLUGIN</span></h3>
-
-                  <div class="relative overflow-hidden  z-10">
-                    <div class="float-left transition duration-1000 ease-in-out">
-                      <div class="float-left" style="display: none;">
-                        <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
-                      </div>
-                      <div class="float-left carousel-item">
-                        <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
-                      </div>
-                      <div class="float-left carousel-item" style="display: none;">
-                        <img class="w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
-                      </div>
+                  <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">0</li>
+                        <li class="glide__slide">1</li>
+                        <li class="glide__slide">2</li>
+                      </ul>
                     </div>
-                    <div onclick="" class="absolute left-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-left"></i>
+                    <div class="glide__arrows" data-glide-el="controls">
+                      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                     </div>
-                    <div onclick="" class="absolute right-0 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-right"></i>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                      <button class="glide__bullet" data-glide-dir="=0"></button>
+                      <button class="glide__bullet" data-glide-dir="=1"></button>
+                      <button class="glide__bullet" data-glide-dir="=2"></button>
                     </div>
                   </div>
                 </div>
@@ -1675,98 +1673,13 @@
               <div class="w-full lg:w-1/2">
                 <div class="m-2 ">
                   <h3 class="mb-4"><span class="font-bold">SINGLE SLIDER</span> <span class="font-sm">BOOTSTRAP</span></h3>
-                  <div class="relative overflow-hidden  z-10">
-                    <img class="hidden w-full" style="display: block;" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide1.jpg" alt="">
-                    <img class="hidden w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide2.jpg" alt="">
-                    <img class="hidden w-full" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/slide3.jpg" alt="">
-                    <div onclick="" class="absolute top-0 left-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div onclick="" class="absolute top-0 right-0 z-50 flex items-center justify-center w-1/6 h-full text-5xl text-white opacity-75 cursor-pointer hover:opacity-100">
-                      <i class="fas fa-chevron-right"></i>
-                    </div>
-                    <div class="absolute bottom-0 w-full mb-4 text-center">
-                      <span class="inline-block w-3 h-3 mx-2 border border-white rounded-full"></span>
-                      <span class="inline-block w-3 h-3 mx-2 border border-white rounded-full"></span>
-                      <span class="inline-block w-3 h-3 mx-2 border border-white rounded-full"></span>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
             <div class="m-2 m-y">
               <h3 class="mb-4"><span class="font-bold">CAROUSEL ITEMS</span> <span class="text-sm">OWL PLUGIN</span></h3>
-
-              <div class="relative product-carousel">
-                <div class="product-carousel-inner">
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="float-left w-full product-carousel-item md:w-1/2 lg:w-1/4">
-                    <div class="p-2 m-2 text-center border rounded-lg">
-                      <img class="mx-auto" src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" alt="">
-                      <div class="my-4">
-                        <a href="#" class="font-bold text-teal-500 hover:text-teal-600">First item name</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-
 
           </div>
         </section>
@@ -1797,4 +1710,5 @@
       }
     }
   </script>
+  <script src="{{asset('js/glide.min.js')}}"></script>
 @endpush
